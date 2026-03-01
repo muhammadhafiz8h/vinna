@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://rerofya.github.io/resources/flower.css">
+  <link rel="stylesheet" href="bunga/style.css">
   <title>Login</title>
 
   <!-- Tailwind -->
@@ -66,7 +69,7 @@ function login(e) {
     <button
       type="submit"
       class="w-full py-3 rounded-xl bg-pink-400 text-white font-semibold hover:bg-pink-500 transition">
-      Enter 🎮
+      Enter 
     </button>
   </form>
 
@@ -75,6 +78,9 @@ function login(e) {
   </p>
 </div>
 
+<div id="flower-container"></div> <!-- untuk rerofya -->
+
+<script src="https://rerofya.github.io/resources/flower.js"></script>
 <!-- ========================= -->
 <!-- CSS PALING BAWAH -->
 <!-- ========================= -->
@@ -90,7 +96,17 @@ function login(e) {
   pointer-events: none;
 }
 </style>
+<style>
+#flower-container {
+  position: fixed;
+  bottom: -30px;
+  left: 400px;
+  transform-origin: bottom right;
+  pointer-events: none;
+  z-index: 1;
+}
 
+</style>
 <!-- ========================= -->
 <!-- JAVASCRIPT PALING BAWAH -->
 <!-- ========================= -->
